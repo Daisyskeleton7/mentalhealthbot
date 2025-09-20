@@ -5,12 +5,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections import Counter
 
-# Debugging: Show current working directory and assets folder contents
-st.markdown("---")
-st.subheader("🛠️ Debugging Info")
-
-st.write("Current working directory:", os.getcwd())
-
 # Title and intro
 st.title("🧠 Mental Health Chatbot")
 st.write("Hi Naveshnie! I'm here to listen, support, and reflect with you.")
@@ -143,4 +137,5 @@ if st.button("Show Emotion Trends"):
             st.pyplot(fig)
     else:
         st.info("No emotion data found yet. Try chatting with the bot first.")
+
 
