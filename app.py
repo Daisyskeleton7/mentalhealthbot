@@ -11,11 +11,6 @@ st.subheader("🛠️ Debugging Info")
 
 st.write("Current working directory:", os.getcwd())
 
-if os.path.exists("assets"):
-    st.write("Files in assets folder:", os.listdir("assets"))
-else:
-    st.warning("Assets folder not found. Make sure it's named 'assets' and placed correctly.")
-
 # Title and intro
 st.title("🧠 Mental Health Chatbot")
 st.write("Hi Naveshnie! I'm here to listen, support, and reflect with you.")
@@ -148,3 +143,4 @@ if st.button("Show Emotion Trends"):
             st.pyplot(fig)
     else:
         st.info("No emotion data found yet. Try chatting with the bot first.")
+
